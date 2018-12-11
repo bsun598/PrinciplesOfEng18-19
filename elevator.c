@@ -23,7 +23,7 @@ task main()
 			turnLEDOff(redLED);
 			while(SensorValue(ultrasonic) < 27)
 			{
-				startMotor(motor1, 15);
+				startMotor(motor1, 10);
 			}
 			stopMotor(motor1);
 			turnLEDOn(greenLED);
@@ -33,13 +33,13 @@ task main()
 			clearTimer(T1);
 			turnLEDOff(greenLED);
 			turnLEDOff(redLED);
-			while (SensorValue(ultrasonic) > 19)
+			while (SensorValue(ultrasonic) > 17)
 			{
-				startMotor(motor1, -20);
+				startMotor(motor1, -17);
 			}
-			while (SensorValue(ultrasonic) < 19)
+			while (SensorValue(ultrasonic) < 17)
 			{
-				startMotor(motor1, 15);
+				startMotor(motor1, 10);
 			}
 			stopMotor(motor1);
 			turnLEDOn(yellowLED);
@@ -51,7 +51,7 @@ task main()
 			turnLEDOff(yellowLED);
 			while (SensorValue(ultrasonic) > 8)
 			{
-				startMotor(motor1, -20);
+				startMotor(motor1, -17);
 			}
 			turnLEDOn(redLED);
 			stopMotor(motor1);
@@ -64,7 +64,7 @@ task main()
 			turnLEDOff(redLED);
 			while (SensorValue(ultrasonic) < 27)
 			{
-				startMotor(motor1, 15);
+				startMotor(motor1, 10);
 			}
 			stopMotor(motor1);
 			turnLEDOn(greenLED);

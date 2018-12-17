@@ -35,7 +35,7 @@ task main()
 			clearTimer(T1); // start timer for automatic floor return
 			turnLEDOff(greenLED); // turn LEDs off for other floors
 			turnLEDOff(redLED);
-			while (SensorValue(ultrasonic) > 17) // if current floor below floor 2, motor goes up
+			while (SensorValue(ultrasonic) > 19) // if current floor below floor 2, motor goes up
 			{
 				startMotor(motor1, -17);
 			}
@@ -51,7 +51,7 @@ task main()
 			clearTimer(T1); // start timer for automatic floor return
 			turnLEDOff(greenLED); // turn LEDs off for other floors
 			turnLEDOff(yellowLED);
-			while (SensorValue(ultrasonic) > 8) // if current floor below floor 3, motor goes up
+			while (SensorValue(ultrasonic) > 5) // if current floor below floor 3, motor goes up
 			{
 				startMotor(motor1, -17);
 			}
